@@ -83,7 +83,11 @@
           </widget>
          </item>
          <item row="6" column="2">
-          <widget class="QSpinBox" name="dbspinWeight"/>
+          <widget class="QSpinBox" name="dbspinWeight">
+           <property name="specialValueText">
+            <string>例：55(kg)</string>
+           </property>
+          </widget>
          </item>
          <item row="7" column="0" colspan="2">
           <widget class="QLabel" name="label_8">
@@ -103,9 +107,6 @@
          </item>
          <item row="1" column="2">
           <widget class="QLineEdit" name="dbEditName"/>
-         </item>
-         <item row="5" column="2">
-          <widget class="QSpinBox" name="dbspinHeight"/>
          </item>
          <item row="3" column="0" colspan="2">
           <widget class="QLabel" name="label_4">
@@ -206,6 +207,13 @@
            </property>
            <property name="alignment">
             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="2">
+          <widget class="QDoubleSpinBox" name="dbspinHeight">
+           <property name="specialValueText">
+            <string>例：1.8(m)</string>
            </property>
           </widget>
          </item>
